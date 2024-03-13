@@ -14,16 +14,16 @@ import pandas as pd
 
 def ask_question(prompt):
     completion = openai.chat.completions.create(
-        model="gpt-3.5-turbo",  # you can replace this with your preferred model
+        model="gpt-3.5-turbo-instruct",  # you can replace this with your preferred model
         messages=[{"role": "user", "content": prompt}],
         max_tokens=500
     )
     return completion.choices[0].message.content
 
-def interact_with_ai(message, model="gpt-3.5-turbo"):
+def interact_with_ai(message, model="gpt-3.5-turbo-instruct"):
     prompt = f"You are a hosting advisor and you role is to reply in few words to the {message} just to keep the user engaged and make him feel that he is interacting with someone."
     completion = openai.chat.completions.create(
-        model="gpt-3.5-turbo",  # you can replace this with your preferred model
+        model="gpt-3.5-turbo-instruct",  # you can replace this with your preferred model
         messages=[{"role": "user", "content": prompt}],
         max_tokens=150
     )
@@ -42,7 +42,7 @@ def recommend_hosting_with_ai(dialog, data_csv):
 
     # Call the OpenAI API
     completion = openai.chat.completions.create(
-        model="gpt-3.5-turbo",  
+        model="gpt-3.5-turbo-instruct",  
         messages=[{"role": "user", "content": prompt}]
     )
 
