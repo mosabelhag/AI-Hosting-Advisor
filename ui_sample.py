@@ -4,7 +4,7 @@ import os
 # Load environment variables from .env file
 load_dotenv()
 # Now you can access your API keys (and other environment variables)
-OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+OPENAI_API_KEY = st.secrets["my_api_key"]
 
 import openai
 import pandas as pd
