@@ -61,7 +61,7 @@ def main():
   questions = [
     "What is your monthly budget for web hosting?",
     "How much traffic do you expect your website to have? (e.g., low, medium, high)",
-    "What is the primary purpose of your website? (e.g., blog, e-commerce, portfolio)",
+    "What are the Type of Your Website?  (for ex. blog, e-commerce, etc)",
     "How would you rate your technical expertise with web hosting and website management? (e.g., beginner, intermediate, advanced)",
     "How important is 24/7 customer support to you?",
     "Are you looking for a hosting service that provides high performance and speed?",
