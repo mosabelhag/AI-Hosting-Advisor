@@ -23,7 +23,7 @@ def ask_question(prompt):
 def interact_with_ai(message, model="gpt-3.5-turbo-0125"):
   prompt = f"You are a hosting advisor and you role is to reply in few words to the {message} just to keep the user engaged and make him feel that he is interacting with someone."
   completion = openai.chat.completions.create(
-    model="gpt-3.5", # you can replace this with your preferred model
+    model="gpt-3.5-turbo-0125", # you can replace this with your preferred model
     messages=[{"role": "user", "content": prompt}],
     max_tokens=500
   )
