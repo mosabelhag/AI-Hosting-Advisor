@@ -21,11 +21,11 @@ def ask_question(prompt):
   return completion.choices[0].message.content
 
 def interact_with_ai(message, model="gpt-3.5-turbo-0125"):
-  prompt = f"You are a hosting advisor and you role is to reply in few words to the {message} just to keep the user engaged and make him feel that he is interacting with someone."
+  prompt = f"You are a hosting advisor and you role is to reply in few words to the {message} just to keep the user engaged and make him feel that he is interacting with someone. please respond fast in few words"
   completion = openai.chat.completions.create(
     model="gpt-3.5-turbo-0125", # you can replace this with your preferred model
     messages=[{"role": "user", "content": prompt}],
-    max_tokens=500
+    max_tokens=1000
   )
   return completion.choices[0].message.content
 
