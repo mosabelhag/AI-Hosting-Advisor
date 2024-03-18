@@ -49,6 +49,7 @@ def main():
         "What is the primary purpose of your website? (e.g., blog, e-commerce, portfolio)",
         "How would you rate your technical expertise with web hosting and website management? (e.g., beginner, intermediate, advanced)",
         "How important is 24/7 customer support to you?",
+        "Do you need WordPress Friendly Hosting Provider?",
         "Are you looking for a hosting service that provides high performance and speed?",
         "Do you anticipate needing to upgrade your hosting plan as your website grows?",
         "Do you have a preference for where your server is located geographically?",
